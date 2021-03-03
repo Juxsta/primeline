@@ -1,10 +1,8 @@
 import GeneralLayout from 'src/layouts/GeneralLayout'
 import Icon from '@material-ui/core/Icon'
-import { Parallax } from 'react-parallax'
+import { Link, routes } from '@redwoodjs/router'
 
 const HomePage = (props) => {
-  const { ...rest } = props
-
   return (
     <GeneralLayout>
       <div
@@ -36,12 +34,13 @@ const HomePage = (props) => {
               confidence.
             </p>
             <div className="flex items-center">
-              <a
+              <Link
+                to={routes.products()}
                 href="/"
                 className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-600 hover:bg-red-600 focus:shadow-outline focus:outline-none"
               >
                 Get a quote today!
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -78,13 +77,14 @@ const HomePage = (props) => {
               materials like block, brick or stone which will only last 20-30
               years on average under the same conditions."
             </p>
-            <a
+            <Link
+              to={routes.products()}
               href="/"
               aria-label=""
               className="inline-flex items-center font-semibold transition-colors duration-200 text-red-600 hover:text-red-600"
             >
               Learn more
-            </a>
+            </Link>
           </div>
           <div className="max-w-md">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-red-100">
@@ -111,13 +111,14 @@ const HomePage = (props) => {
               for your walls and floors without requiring costly excavations in
               hard terrain like rocky hillsides or wetlands.
             </p>
-            <a
+            <Link
+              to={routes.products()}
               href="/"
               aria-label=""
               className="inline-flex items-center font-semibold transition-colors duration-200 text-red-600 hover:text-red-600"
             >
               Learn more
-            </a>
+            </Link>
           </div>
           <div className="max-w-md">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-red-100">
@@ -135,13 +136,14 @@ const HomePage = (props) => {
               quality materials, all of which are lab certified and fully tested
               to ensure safety when constructing your project.
             </p>
-            <a
+            <Link
+              to={routes.products()}
               href="/"
               aria-label=""
               className="inline-flex items-center font-semibold transition-colors duration-200 text-red-600 hover:text-red-600"
             >
               Learn more
-            </a>
+            </Link>
           </div>
           <div className="max-w-md">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-red-100">
@@ -154,13 +156,14 @@ const HomePage = (props) => {
               Need help? Reach out to us anytime at
               hello@hollowblocksphilippines or on social media @HollowBlocksPH
             </p>
-            <a
+            <Link
+              to={routes.products()}
               href="/"
               aria-label=""
               className="inline-flex items-center font-semibold transition-colors duration-200 text-red-600 hover:text-red-600"
             >
               Learn more
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -204,12 +207,13 @@ const HomePage = (props) => {
                   13.50 PHP
                 </div>
               </div>
-              <a
+              <Link
+                to={routes.products()}
                 href="/"
                 className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-600 hover:bg-red-600 focus:shadow-outline focus:outline-none"
               >
                 Buy Basic Blocks
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex flex-col transition duration-300 bg-white rounded shadow-sm hover:shadow">
@@ -233,12 +237,13 @@ const HomePage = (props) => {
                   14.50 PHP
                 </div>
               </div>
-              <a
+              <Link
+                to={routes.products()}
                 href="/"
                 className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-600 hover:bg-red-600 focus:shadow-outline focus:outline-none"
               >
                 Buy Advanced Blocks
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex flex-col transition duration-300 bg-white rounded shadow-sm hover:shadow">
@@ -261,12 +266,13 @@ const HomePage = (props) => {
                   15 PHP
                 </div>
               </div>
-              <a
+              <Link
+                to={routes.products()}
                 href="/"
                 className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-600 hover:bg-red-600 focus:shadow-outline focus:outline-none"
               >
                 Buy Pro Blocks
-              </a>
+              </Link>
             </div>
           </div>
         </div>

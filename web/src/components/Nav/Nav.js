@@ -1,9 +1,11 @@
+import { useLocation, Link, routes } from '@redwoodjs/router'
 const Nav = () => {
   return (
     <div className="w-full px-4 py-5 mx-auto md:px-24 lg:px-8 bg-yellow-500 z-50 shadow-md ">
       <div className="relative flex items-center justify-between max-w-6xl mx-auto  ">
         <div className="flex items-center">
-          <a
+          <Link
+            to={routes.home()}
             href="/"
             aria-label="Primeline Hollow Blocks"
             title="Primeline Hollow Blocks"
@@ -16,9 +18,13 @@ const Nav = () => {
                 width="330"
               />
             </span>
-          </a>
+          </Link>
         </div>
-        <ul className="flex items-center hidden space-x-8 lg:flex">
+        <ul
+          className={`flex items-center hidden space-x-8 lg:flex ${
+            useLocation.pathname === '/home' ? 'visible' : 'invisible'
+          }`}
+        >
           <li>
             <a
               href="/"
