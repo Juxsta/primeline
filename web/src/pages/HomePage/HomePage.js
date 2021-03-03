@@ -7,7 +7,7 @@ const HomePage = (props) => {
 
   return (
     <GeneralLayout>
-      <Parallax
+      <div
         className="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 w-full bg-yellow-500"
         strength={300}
       >
@@ -45,7 +45,7 @@ const HomePage = (props) => {
             </div>
           </div>
         </div>
-      </Parallax>
+      </div>
 
       <div className="px-4 py-16 bg-gray-300 mx-auto w-full md:px-24 lg:px-8 lg:py-20">
         <div className="flex flex-col max-w-4xl mx-auto mb-6 lg:flex-row md:mb-10">

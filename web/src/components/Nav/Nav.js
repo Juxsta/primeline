@@ -1,7 +1,7 @@
 const Nav = () => {
   return (
-    <div className="w-full px-4 py-5 mx-auto md:px-24 lg:px-8 bg-yellow-500 z-50 shadow-md">
-      <div className="relative flex items-center justify-between max-w-6xl mx-auto ">
+    <div className="w-full px-4 py-5 mx-auto md:px-24 lg:px-8 bg-yellow-500 z-50 shadow-md ">
+      <div className="relative flex items-center justify-between max-w-6xl mx-auto  ">
         <div className="flex items-center">
           <a
             href="/"
