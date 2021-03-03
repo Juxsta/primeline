@@ -11,14 +11,16 @@ import './index.css'
 
 isBrowser && netlifyIdentity.init()
 
-const App = () => (
-  <FatalErrorBoundary page={FatalErrorPage}>
-    <AuthProvider client={netlifyIdentity} type="netlify">
-      <RedwoodApolloProvider>
-        <Routes />
-      </RedwoodApolloProvider>
-    </AuthProvider>
-  </FatalErrorBoundary>
-)
+const App = () => {
+  return (
+    <FatalErrorBoundary page={FatalErrorPage}>
+      <AuthProvider client={netlifyIdentity} type="netlify">
+        <RedwoodApolloProvider>
+          <Routes />
+        </RedwoodApolloProvider>
+      </AuthProvider>
+    </FatalErrorBoundary>
+  )
+}
 
 export default App

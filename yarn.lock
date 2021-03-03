@@ -1265,6 +1265,25 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fortawesome/fontawesome-common-types@^0.2.34":
+  version "0.2.34"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.34.tgz#0a8c348bb23b7b760030f5b1d912e582be4ec915"
+  integrity sha512-XcIn3iYbTEzGIxD0/dY5+4f019jIcEIWBiHc3KrmK/ROahwxmZ/s+tdj97p/5K0klz4zZUiMfUlYP0ajhSJjmA==
+
+"@fortawesome/free-solid-svg-icons@^5.15.2":
+  version "5.15.2"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.15.2.tgz#25bb035de57cf85aee8072965732368ccc8e8943"
+  integrity sha512-ZfCU+QjaFsdNZmOGmfqEWhzI3JOe37x5dF4kz9GeXvKn/sTxhqMtZ7mh3lBf76SvcYY5/GKFuyG7p1r4iWMQqw==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.34"
+
+"@fortawesome/react-fontawesome@^0.1.14":
+  version "0.1.14"
+  resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-0.1.14.tgz#bf28875c3935b69ce2dc620e1060b217a47f64ca"
+  integrity sha512-4wqNb0gRLVaBm/h+lGe8UfPPivcbuJ6ecI4hIgW0LjI7kzpYB9FkN0L9apbVzg+lsBdcTf0AlBtODjcSX5mmKA==
+  dependencies:
+    prop-types "^15.7.2"
+
 "@fullhuman/postcss-purgecss@^3.1.3":
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/@fullhuman/postcss-purgecss/-/postcss-purgecss-3.1.3.tgz#47af7b87c9bfb3de4bc94a38f875b928fffdf339"
@@ -7666,6 +7685,11 @@ fbjs@^3.0.0:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.18"
 
+fg-loadcss@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/fg-loadcss/-/fg-loadcss-3.1.0.tgz#f7f148dccf8a6899f846a974ed50539880158acb"
+  integrity sha512-UgtXKza8nBUO6UWW4c+MOprRL4W5WbIkzPJafnw6y6f5jhA3FiSZkWz8eXeAeX+mC4A/qq0ByDLiAk6erNARaQ==
+
 figgy-pudding@^3.5.1:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.5.2.tgz#b4eee8148abb01dcf1d1ac34367d59e12fa61d6e"
@@ -13150,6 +13174,11 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+
+react-parallax@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/react-parallax/-/react-parallax-3.2.1.tgz#0c41e6e187ccf47ee6547be8d55971cdfb51d030"
+  integrity sha512-tT10KgmE2akycI3KtUR9C+wTPI57xwQT4D4Z/5kI/JT+VG4+mgv4hvRJN9zFRMs6xB/4mUPF1Kt9Gu2pwN35iw==
 
 react-popper-tooltip@^2.8.3:
   version "2.11.1"
