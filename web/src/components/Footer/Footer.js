@@ -9,11 +9,7 @@ const Footer = () => {
             title="Company"
             className="inline-flex items-center"
           >
-            <img
-              src="src/assets/Primeline Logo Black-03.svg"
-              height="250"
-              width="250"
-            />
+            <img src="/Primeline Logo Black-03.svg" height="250" width="250" />
           </a>
           <div className="mt-6 lg:max-w-sm">
             <p className="text-sm text-gray-800">

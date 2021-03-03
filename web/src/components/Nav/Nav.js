@@ -13,7 +13,7 @@ const Nav = () => {
           >
             <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
               <img
-                src="src/assets/Primeline Logo Black-03.svg"
+                src="/Primeline Logo Black-03.svg"
                 height="330"
                 width="330"
               />
