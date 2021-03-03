@@ -39,6 +39,17 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex">
+            <p className="mr-1 text-gray-800">Smart Phone:</p>
+            <a
+              href="tel:850-123-5021"
+              aria-label="Primeline Concrete Plus Global Phone Number"
+              title="Primeline Concrete Plus Global Phone Numbe"
+              className="transition-colors duration-300 text-red-600 hover:text-deep-purple-800"
+            >
+              0997 436 9830
+            </a>
+          </div>
+          <div className="flex">
             <p className="mr-1 text-gray-800">Email:</p>
             <a
               href="mailto:info@lorem.mail"
