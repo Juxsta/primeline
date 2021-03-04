@@ -1,5 +1,7 @@
 import { useLocation, Link, routes } from '@redwoodjs/router'
 const Nav = () => {
+  const { pathname } = useLocation()
+  console.log(pathname)
   return (
     <div className="w-full px-4 py-5 mx-auto md:px-24 lg:px-8 bg-yellow-500 z-50 shadow-md ">
       <div className="relative flex items-center justify-between max-w-6xl mx-auto  ">
@@ -22,18 +24,18 @@ const Nav = () => {
         </div>
         <ul
           className={`flex items-center hidden space-x-8 lg:flex ${
-            useLocation.pathname === '/home' ? 'visible' : 'invisible'
+            pathname === '/' ? 'visible' : 'invisible'
           }`}
         >
           <li>
-            <a
-              href="/"
+            <Link
+              to={routes.products()}
               aria-label="Shop Now"
               title="Shop Now"
               className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-600 hover:bg-red-600 focus:shadow-outline focus:outline-none"
             >
               Shop Now
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
