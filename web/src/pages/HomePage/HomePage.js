@@ -189,7 +189,7 @@ const HomePage = (props) => {
           <div className="flex flex-col transition duration-300 bg-white rounded shadow-sm hover:shadow">
             <div className="relative w-full h-48">
               <img
-                src="https://images.pexels.com/photos/3184305/pexels-photo-3184305.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                src="/4in_low_res_pallet.jpg"
                 alt="Plan"
                 className="object-cover w-full h-full rounded-t"
               />
@@ -219,7 +219,7 @@ const HomePage = (props) => {
           <div className="flex flex-col transition duration-300 bg-white rounded shadow-sm hover:shadow">
             <div className="relative w-full h-48">
               <img
-                src="https://images.pexels.com/photos/3183181/pexels-photo-3183181.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                src="/5in_low_res_pallete.jpg"
                 alt="Plan"
                 className="object-cover w-full h-full rounded-t"
               />
@@ -249,7 +249,7 @@ const HomePage = (props) => {
           <div className="flex flex-col transition duration-300 bg-white rounded shadow-sm hover:shadow">
             <div className="relative w-full h-48">
               <img
-                src="https://images.pexels.com/photos/3182743/pexels-photo-3182743.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                src="/6in_low_res_pallete.jpg"
                 alt="Plan"
                 className="object-cover w-full h-full rounded-t"
               />
