@@ -13,11 +13,7 @@ const Nav = () => {
             className="inline-flex items-center mr-8"
           >
             <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-              <img
-                src="/Primeline Logo Black-03.svg"
-                height="330"
-                width="330"
-              />
+              <img src="/Primeline Logo.svg" height="400" width="400" />
             </span>
           </Link>
         </div>
