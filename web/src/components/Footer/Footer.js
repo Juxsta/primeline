@@ -42,7 +42,7 @@ const Footer = () => {
               title="Primeline Concrete Plus Global Phone Numbe"
               className="transition-colors duration-300 text-red-600 hover:text-deep-purple-800"
             >
-              0997 436 9830
+              0963 691 4380
             </a>
           </div>
           <div className="flex">
@@ -53,7 +53,7 @@ const Footer = () => {
               title="Our email"
               className="transition-colors duration-300 text-red-600 hover:text-deep-purple-800"
             >
-              info@lorem.mail
+              ericsreyes0808@outlook.com
             </a>
           </div>
           <div className="flex">
@@ -66,7 +66,7 @@ const Footer = () => {
               title="Our address"
               className="transition-colors duration-300 text-red-600 hover:text-deep-purple-800"
             >
-              312 Lovely Street, NY
+              Sitio Libutad, Sta. Maria, Mabalacat City, Pampanga
             </a>
           </div>
         </div>

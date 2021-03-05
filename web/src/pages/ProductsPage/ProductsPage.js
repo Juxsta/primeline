@@ -1,5 +1,7 @@
 import BuyButton from 'src/components/BuyButton'
 import GeneralLayout from 'src/layouts/GeneralLayout'
+import Contact from 'src/components/Contact'
+
 import { Link, routes } from '@redwoodjs/router'
 
 const ProductsPage = () => {
@@ -27,6 +29,7 @@ const ProductsPage = () => {
           </div>
         </div>
         <BuyButton></BuyButton>
+        <Contact></Contact>
       </GeneralLayout>
     </>
   )
