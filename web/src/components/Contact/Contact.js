@@ -90,7 +90,7 @@ const Contact = () => {
               id="name"
               name="name"
               className="error w-full bg-white rounded border border-gray-300 focus:border-yellow-600 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              errorClassName="error w-full bg-white rounded border border-gray-300 border-red-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              errorClassName="normal-case w-full bg-white rounded border border-gray-300 border-red-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               validation={{ required: true }}
             />
             <FieldError name="name" className="text-red-500" />
@@ -104,10 +104,10 @@ const Contact = () => {
               id="email"
               name="email"
               className="w-full bg-white rounded border border-gray-300 focus:border-yellow-600 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              errorClassName="error w-full bg-white rounded border border-gray-300 border-red-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              errorClassName="normal-case w-full bg-white rounded border border-gray-300 border-red-500 focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               validation={{ required: true }}
             />
-            <FieldError name="email" className="text-red-500" />
+            <FieldError name="email" className="normal-case text-red-500" />
           </div>
           <div className="relative mb-4">
             <Label

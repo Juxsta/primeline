@@ -1,10 +1,20 @@
 import GeneralLayout from 'src/layouts/GeneralLayout'
 import Icon from '@material-ui/core/Icon'
 import { Link, routes } from '@redwoodjs/router'
-
+import { Helmet } from 'react-helmet'
 const HomePage = (props) => {
   return (
     <GeneralLayout>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Primeline Concrete Plus Company Hollow Blocks</title>
+        <link rel="canonical" href="https://primelineconcreteplus.com" />
+        <meta name="description" content="Primeline Concrete Plus Co Home. ">
+          Strong, Quality, Lab Tested Concrete Hollow Blocks for sale. We have 4
+          inch, 5 inch, and 6 inch blocks available with compression strengths
+          of 500, 700 and 1000 PSI. Request a sample or order a pallet today!
+        </meta>
+      </Helmet>
       <div
         className="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 w-full bg-yellow-500"
         strength={300}
@@ -54,10 +64,11 @@ const HomePage = (props) => {
             </h2>
           </div>
           <div className="lg:w-1/2">
-            <p className="text-base text-gray-800 md:text-lg">
-              Hollow Blocks offer a lightweight alternative to traditional
-              bricks and mortar for any project, big or small.
-            </p>
+            <h1 className="text-sm text-gray-800 md:text-lg">
+              Concrete Load-Bearing Hollow Blocks offer a lightweight
+              alternative to traditional bricks and mortar for any project, big
+              or small.
+            </h1>
           </div>
         </div>
         <div className="grid max-w-4xl gap-20 row-gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-2">

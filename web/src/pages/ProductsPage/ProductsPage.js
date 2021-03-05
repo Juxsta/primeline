@@ -1,13 +1,22 @@
 import BuyButton from 'src/components/BuyButton'
 import GeneralLayout from 'src/layouts/GeneralLayout'
 import Contact from 'src/components/Contact'
-
-import { Link, routes } from '@redwoodjs/router'
+import { Helmet } from 'react-helmet'
 
 const ProductsPage = () => {
   return (
     <>
       <GeneralLayout>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Primeline| Shop</title>
+          <link rel="canonical" href="https://primelineconcreteplus.com" />
+          <meta name="description" content="Primeline Concrete Plus Co Home. ">
+            Order 4inch, 5 inch, and 6 inch blocks available with compression
+            strengths of 500, 700 and 1000 PSI. Request a sample or order a
+            pallet today!
+          </meta>
+        </Helmet>
         <div className="container px-5 pt-24 pb-12 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h2 className="text-xs text-red-500 tracking-widest font-medium title-font mb-1">
