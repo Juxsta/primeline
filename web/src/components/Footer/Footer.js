@@ -105,20 +105,12 @@ const Footer = () => {
       </div>
       <div className="max-w-6xl mx-auto flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
         <p className="text-sm text-gray-800">
-          © Copyright 2020 Company. All rights reserved.
+          © Copyright 2020 Primeline Concrete Plus Company. All rights reserved.
         </p>
         <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
           <li>
             <a
-              href="/"
-              className="text-sm text-gray-800 transition-colors duration-300 hover:text-red-800"
-            >
-              F.A.Q
-            </a>
-          </li>
-          <li>
-            <a
-              href="/"
+              href="https://www.termsfeed.com/live/370ff7ce-aa79-40af-a1d0-7d9ae8698ad8"
               className="text-sm text-gray-800 transition-colors duration-300 hover:text-red-800"
             >
               Privacy Policy
@@ -126,7 +118,7 @@ const Footer = () => {
           </li>
           <li>
             <a
-              href="/"
+              href="https://www.termsfeed.com/live/ec88f115-99f6-4364-b7a4-72e9a92dafa6"
               className="text-sm text-gray-800 transition-colors duration-300 hover:text-red-800"
             >
               Terms &amp; Conditions
