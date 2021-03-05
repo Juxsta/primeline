@@ -63,10 +63,7 @@ const HomePage = (props) => {
         <div className="grid max-w-4xl gap-20 row-gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-2">
           <div className="max-w-md">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-red-100">
-              <Icon
-                className="fas fa-chimney  text-red-600 mb-1"
-                fontSize="medium"
-              />
+              <Icon className="fas fa-chimney  text-red-600 mb-1" />
             </div>
             <h6 className="mb-2 font-semibold leading-5 text-gray-800">
               Long lasting strength with low maintenance costs.
@@ -122,10 +119,7 @@ const HomePage = (props) => {
           </div>
           <div className="max-w-md">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-red-100">
-              <Icon
-                className="fas fa-hard-hat  text-red-600 mb-1"
-                fontSize="medium"
-              />
+              <Icon className="fas fa-hard-hat  text-red-600 mb-1" />
             </div>
             <h6 className="mb-2 font-semibold leading-5 text-gray-800">
               Safety first.
