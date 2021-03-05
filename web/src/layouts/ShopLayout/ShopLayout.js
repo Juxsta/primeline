@@ -12,12 +12,11 @@ import {
   removeLineItemInCart,
   handleCartOpen,
 } from 'src/shopifyActions'
+import { Icon, IconButton } from '@material-ui/core'
 class ShopLayout extends React.Component {
   client = client
   constructor() {
     super()
-
-    this.state = store.getState() // state from redux store
 
     this.handleCartClose = handleCartClose.bind(this)
     this.addVariantToCart = addVariantToCart.bind(this)
@@ -31,24 +30,18 @@ class ShopLayout extends React.Component {
       <>
         <Nav
           actionitem={
-            !this.state.isCartOpen && (
-              <div className="App__view-cart-wrapper">
-                <button
-                  className="App__view-cart"
-                  onClick={this.handleCartOpen}
-                >
-                  Cart
-                </button>
-              </div>
-            )
+            <IconButton onClick={this.handleCartOpen}>
+              <Icon className="fas fa-shopping-cart"></Icon>
+              Cart
+            </IconButton>
           }
         />
         <main>{this.props.children}</main>
 
         <Footer />
         <Cart
-          checkout={this.state.checkout}
-          isCartOpen={this.state.isCartOpen}
+          checkout={this.props.checkout}
+          isCartOpen={this.props.isCartOpen}
           handleCartClose={this.handleCartClose}
           updateQuantityInCart={this.updateQuantityInCart}
           removeLineItemInCart={this.removeLineItemInCart}

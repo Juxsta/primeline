@@ -1,5 +1,5 @@
 import LineItem from './LineItem'
-
+import Drawer from '@material-ui/core/Drawer'
 class Cart extends React.Component {
   constructor() {
     super()
@@ -24,7 +24,13 @@ class Cart extends React.Component {
     })
 
     return (
-      <div className={`Cart ${this.props.isCartOpen ? 'Cart--open' : ''}`}>
+      <Drawer
+        variant="persistent"
+        anchor="right"
+        open={this.props.isCartOpen}
+        onClose={this.props.handleCartClose}
+        className={`Cart ${this.props.isCartOpen ? 'Cart--open' : ''}`}
+      >
         <header className="Cart__header">
           <h2>Your cart</h2>
           <button onClick={this.props.handleCartClose} className="Cart__close">
@@ -59,7 +65,7 @@ class Cart extends React.Component {
             Checkout
           </button>
         </footer>
-      </div>
+      </Drawer>
     )
   }
 }
