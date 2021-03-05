@@ -11,11 +11,12 @@ const ProductsPage = () => {
           <meta charSet="utf-8" />
           <title>Primeline| Shop</title>
           <link rel="canonical" href="https://primelineconcreteplus.com" />
-          <meta name="description" content="Primeline Concrete Plus Co Home. ">
-            Order 4inch, 5 inch, and 6 inch blocks available with compression
+          <meta
+            name="description"
+            content="Order 4inch, 5 inch, and 6 inch blocks available with compression
             strengths of 500, 700 and 1000 PSI. Request a sample or order a
-            pallet today!
-          </meta>
+            pallet today!"
+          ></meta>
         </Helmet>
         <div className="container px-5 pt-24 pb-12 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
