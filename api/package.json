@@ -5,6 +5,7 @@
   "dependencies": {
     "@redwoodjs/api": "^0.26.2",
     "@sendgrid/mail": "^7.4.2",
+    "buttercms": "^1.2.6",
     "node-fetch": "^2.6.1"
   }
 }

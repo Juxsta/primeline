@@ -39,20 +39,35 @@ export default function Nav(props) {
       <HideOnScroll {...props}>
         <AppBar>
           <Toolbar className=" flex items-center justify-between bg-yellow-500 ">
-            <Link
-              to={routes.home()}
-              href="/"
-              aria-label="Primeline Hollow Blocks"
-              title="Primeline Hollow Blocks"
-              className="inline-flex items-center mr-8"
-            >
-              <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                <img src="/Primeline Logo.svg" height="400" width="400" />
-              </span>
-            </Link>
+            <div className="flex flex-row">
+              <Link
+                to={routes.home()}
+                href="/"
+                aria-label="Primeline Hollow Blocks"
+                title="Primeline Hollow Blocks"
+                className="inline-flex items-center mr-8"
+              >
+                <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+                  <img src="/Primeline Logo.svg" height="400" width="400" />
+                </span>
+              </Link>
+              <ul className="flex items-center hidden space-x-8 lg:flex">
+                <li>
+                  <Link
+                    to={routes.blogHome()}
+                    aria-label="Blog"
+                    title="Blog"
+                    className="font-medium tracking-wide text-gray-800 transition-colors duration-200 hover:text-gray-800"
+                  >
+                    Blog
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
             <ul
               className={`flex items-center hidden space-x-8 lg:flex ${
-                pathname === '/' ? 'visible' : 'invisible'
+                pathname === 'shop' ? 'invisible' : 'visible'
               }`}
             >
               <li>
