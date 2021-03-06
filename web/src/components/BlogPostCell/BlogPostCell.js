@@ -24,7 +24,7 @@ export const Failure = ({ error }) => <div>Error: {error.message}</div>
 export const Success = ({ blogPost }) => {
   const post = blogPost.data
   return (
-    <article className="divide-y divide-gray-200 my-5">
+    <article className="my-5">
       <header>
         <div className="space-y-1 text-center my-6">
           <dl className="space-y-10">
@@ -44,19 +44,41 @@ export const Success = ({ blogPost }) => {
           </div>
         </div>
       </header>
+      <hr className="border-0 bg-gray-500 text-gray-500 h-px" />
+
       <div
-        className=" xl:pb-0 xl:col-span-3 xl:row-span-2"
+        className="unreset"
         dangerouslySetInnerHTML={{ __html: post.body }}
       />
-      <DiscussionEmbed
-        shortname="example"
-        config={{
-          url: window.location.href,
-          identifier: post.slug,
-          title: post.title,
-          language: 'en-us', //e.g. for Traditional Chinese (Taiwan)
-        }}
-      />
+      <hr className="border-0 bg-gray-500 text-gray-500 h-px my-6" />
+
+      <div id="disqus_thread"></div>
+
+      <script>
+        {/* /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */}
+        {(function () {
+          // DON'T EDIT BELOW THIS LINE
+          var d = document,
+            s = d.createElement('script')
+          s.src = 'https://primelineconcreteplus.disqus.com/embed.js'
+          s.setAttribute('data-timestamp', +new Date())
+          ;(d.head || d.body).appendChild(s)
+        })()}
+      </script>
+      <noscript>
+        Please enable JavaScript to view the{' '}
+        <a href="https://disqus.com/?ref_noscript">
+          comments powered by Disqus.
+        </a>
+      </noscript>
     </article>
   )
 }
