@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import Butter from 'buttercms'
 
-const butter = Butter('de55d3f93789d4c5c26fb07445b680e8bca843bd')
+const butter = Butter(process.env.BUTTER_API_KEY)
 
 export const listPosts = async ({
   page,
