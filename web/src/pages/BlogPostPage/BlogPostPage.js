@@ -1,17 +1,14 @@
 import { Link, routes } from '@redwoodjs/router'
+import BlogPostCell from 'src/components/BlogPostCell'
+import GeneralLayout from 'src/layouts/GeneralLayout'
 
-const BlogPostPage = () => {
+const BlogPostPage = ({ slug }) => {
   return (
-    <>
-      <h1>BlogPostPage</h1>
-      <p>
-        Find me in <code>./web/src/pages/BlogPostPage/BlogPostPage.js</code>
-      </p>
-      <p>
-        My default route is named <code>blogPost</code>, link to me with `
-        <Link to={routes.blogPost()}>BlogPost</Link>`
-      </p>
-    </>
+    <GeneralLayout>
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+        <BlogPostCell slug={slug} />
+      </div>
+    </GeneralLayout>
   )
 }
 
