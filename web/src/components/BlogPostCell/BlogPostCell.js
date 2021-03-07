@@ -1,5 +1,5 @@
 import moment from 'moment'
-import { DiscussionEmbed } from 'disqus-react'
+import { Helmet } from 'react-helmet'
 
 export const QUERY = gql`
   query BlogPostQuery($slug: String!) {
@@ -25,6 +25,11 @@ export const Success = ({ blogPost }) => {
   const post = blogPost.data
   return (
     <article className="my-5">
+      <Helmet>
+        <title>{post.seo_title}</title>
+        <meta name="description" content={post.meta_description} />
+        <meta name="og:image" content={post.featured_image} />
+      </Helmet>
       <header>
         <div className="space-y-1 text-center my-6">
           <dl className="space-y-10">
