@@ -10,6 +10,9 @@ export const QUERY = gql`
         created
         updated
         slug
+        seo_title
+        meta_description
+        featured_image
       }
     }
   }
